@@ -116,9 +116,9 @@ a:hover {
 
 .navbar-brand {
     font-family: var(--heading-font);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-primary) !important;
     text-decoration: none;
 }
 
@@ -151,6 +151,16 @@ footer {
 
 [data-theme="dark"] footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-brand {
+    font-family: var(--heading-font);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    display: block;
+    text-decoration: none;
 }
 
 .footer-title {
@@ -311,7 +321,7 @@ footer {
 
 .auth-brand {
     font-family: var(--heading-font);
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--text-primary);
     text-decoration: none;
@@ -384,8 +394,8 @@ footer {
 }
 
 .btn-google {
-    color: #DB4437;
-    border-color: rgba(219, 68, 55, 0.2);
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .btn-facebook {
@@ -394,9 +404,8 @@ footer {
 }
 
 .btn-google:hover {
-    background-color: #DB4437;
-    color: #fff;
-    border-color: #DB4437;
+    background-color: #f8f8f8;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-facebook:hover {
