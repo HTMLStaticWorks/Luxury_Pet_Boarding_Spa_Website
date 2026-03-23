@@ -363,6 +363,16 @@ footer {
     margin-left: .5em;
 }
 
+[dir="rtl"] .auth-divider:not(:empty)::before {
+    margin-right: 0;
+    margin-left: .5em;
+}
+
+[dir="rtl"] .auth-divider:not(:empty)::after {
+    margin-left: 0;
+    margin-right: .5em;
+}
+
 .social-btns {
     display: flex;
     gap: 15px;
