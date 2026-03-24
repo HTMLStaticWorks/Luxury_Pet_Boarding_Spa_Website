@@ -159,8 +159,14 @@ footer {
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 20px;
-    display: block;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.footer-brand img {
+    height: 28px;
+    margin-right: 12px;
 }
 
 .footer-title {
@@ -325,7 +331,10 @@ footer {
     font-weight: 700;
     color: var(--text-primary);
     text-decoration: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
     margin-bottom: 20px;
     transition: var(--transition);
 }
@@ -454,6 +463,16 @@ footer {
     color: #fff;
     border-color: var(--accent-color);
     transform: translateY(-3px);
+}
+
+.social-icon-hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-icon-hover:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-5px) scale(1.1);
 }
 
 /* Map */
