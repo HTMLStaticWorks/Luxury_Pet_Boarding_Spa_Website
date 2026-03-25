@@ -114,6 +114,18 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+.navbar-toggler {
+    border-color: rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1) brightness(1.5);
+}
+
 .navbar-brand {
     font-family: var(--heading-font);
     font-size: 26px;
@@ -337,6 +349,15 @@ footer {
     white-space: nowrap;
     margin-bottom: 20px;
     transition: var(--transition);
+}
+
+.auth-brand img {
+    width: auto !important;
+    height: 32px !important;
+    aspect-ratio: auto !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    object-fit: contain !important;
 }
 
 .auth-brand:hover {

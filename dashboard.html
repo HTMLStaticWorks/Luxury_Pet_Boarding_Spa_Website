@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard | Luxury Pet Boarding & Spa</title><link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <title>Dashboard | Luxury Pet Boarding & Spa</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,8 +15,8 @@
     <style>
         .dashboard-container {
             display: flex;
-            min-height: 100vh;
-            margin-top: 20px;
+            min-height: 0;
+            margin-top: 0;
         }
 
         @media (max-width: 1199px) {
@@ -145,11 +148,12 @@
         .add-on-card {
             border: 1px solid rgba(0, 0, 0, 0.05);
             border-radius: 15px;
-            padding: 20px;
+            padding: 12px;
             text-align: center;
             transition: var(--transition);
             cursor: pointer;
             height: 100%;
+            overflow-wrap: break-word; /* Prevent text overflow */
         }
 
         [data-theme="dark"] .add-on-card {
@@ -162,9 +166,17 @@
         }
 
         .add-on-icon {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: var(--accent-color);
-            margin-bottom: 15px;
+            margin-bottom: 8px;
+        }
+
+        .add-on-card h6 {
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         @media (max-width: 1199px) {
@@ -290,7 +302,7 @@
         <div class="offcanvas-body p-4">
             <div class="mb-4 text-center">
                 <div class="gallery-img-wrapper mx-auto mb-3" style="width: 80px; height: 80px; border-radius: 50%;">
-                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=200&q=80"
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt="Pet Owner">
                 </div>
                 <h5 class="mb-0">Julian Hayes</h5>
@@ -317,7 +329,7 @@
                     <a href="index.html" class="navbar-brand d-block mb-4"><img src="assets/img/favicon.svg" alt="Logo" height="32" class="me-2 d-inline-block align-text-top">Paws Ritz</a>
                     <div class="gallery-img-wrapper mx-auto mb-3"
                         style="width: 80px; height: 80px; border-radius: 50%;">
-                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=200&q=80"
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                             alt="Pet Owner">
                     </div>
                     <h5 class="mb-0">Julian Hayes</h5>
@@ -352,12 +364,12 @@
 
                 <div class="row align-items-start">
                     <!-- Pet Status Card -->
-                    <div class="col-lg-12 gs-reveal">
+                    <div class="col-lg-12">
                         <div class="dashboard-card d-flex align-items-center justify-content-between pet-status-card">
                             <div class="d-flex align-items-center card-mobile-stack">
                                 <div class="gallery-img-wrapper me-4"
                                     style="width: 100px; height: 100px; border-radius: 15px;">
-                                    <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=300&q=80"
+                                    <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=500&q=80"
                                         alt="Pet Image">
                                 </div>
                                 <div>
@@ -378,7 +390,7 @@
                     </div>
 
                     <!-- Live Webcam Section -->
-                    <div id="webcam" class="col-lg-9 gs-reveal">
+                    <div id="webcam" class="col-lg-9">
                         <div class="dashboard-card">
                             <div class="d-flex justify-content-between align-items-center mb-4">
                                 <h4 class="mb-0">Live Pet Cam - Suite 402</h4>
@@ -397,7 +409,7 @@
                                     <div class="webcam-status-dot"></div>
                                     <span>LIVE | HD 1080P</span>
                                 </div>
-                                <img src="https://images.unsplash.com/photo-1541364983171-a8ba01d95cfc?auto=format&fit=crop&w=1200&q=80"
+                                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1000&q=80"
                                     alt="Live Stream" class="w-100 h-100" style="object-fit: cover;">
                             </div>
                             <div class="mt-4 d-flex justify-content-between">
@@ -412,32 +424,32 @@
                     </div>
 
                     <!-- Add-ons Section -->
-                    <div id="addons" class="col-lg-3 gs-reveal">
+                    <div id="addons" class="col-lg-3">
                         <div class="dashboard-card h-100">
                             <h4 class="mb-4">Quick Add-ons</h4>
                             <div class="row g-3">
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="add-on-card">
                                         <div class="add-on-icon"><i class="fas fa-bone"></i></div>
                                         <h6>Extra Playtime</h6>
                                         <p class="small text-accent mb-0 fw-bold">$25</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="add-on-card">
                                         <div class="add-on-icon"><i class="fas fa-soap"></i></div>
                                         <h6>Quick Bath</h6>
                                         <p class="small text-accent mb-0 fw-bold">$40</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="add-on-card">
                                         <div class="add-on-icon"><i class="fas fa-utensils"></i></div>
                                         <h6>Gourmet Meat</h6>
                                         <p class="small text-accent mb-0 fw-bold">$15</p>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12">
                                     <div class="add-on-card">
                                         <div class="add-on-icon"><i class="fas fa-spa"></i></div>
                                         <h6>Paw Massage</h6>

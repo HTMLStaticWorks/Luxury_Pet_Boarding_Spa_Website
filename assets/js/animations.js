@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const revealElements = document.querySelectorAll('.gs-reveal');
         revealElements.forEach((el) => {
             gsap.fromTo(el, 
-                { y: 50, opacity: 0 },
+                { y: 20, opacity: 0 },
                 { 
                     y: 0, 
                     opacity: 1, 
